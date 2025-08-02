@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 4px solid #2c3e50;
+        }
+        .header-text h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        .header-text .title {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        .contact-info span {
+            margin-right: 15px;
+            color: #34495e;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .job-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .skill-category {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .skill-category strong {
+            color: #2c3e50;
+        }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="header-text">
+                <h1>[Your Full Name]</h1>
+                <div class="title">[Your Job Title/Professional Summary]</div>
+                <div class="contact-info">
+                    <span>📧 [your.email@example.com]</span>
+                    <span>📱 [Your Phone Number]</span>
+                    <span>🌐 [LinkedIn Profile]</span>
+                    <span>💻 [GitHub Profile]</span>
+                    <span>📍 [City, State]</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Professional Summary</h2>
+        <p>[Write a compelling 2-3 sentence summary highlighting your key strengths, years of experience, and what you bring to potential employers. Focus on your most relevant skills and achievements.]</p>
+
+        <h2>Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">[Job Title] | [Company Name]</div>
+                <div class="job-date">[Start Date] - [End Date] | [Location]</div>
+            </div>
+            <ul>
+                <li>[Achievement-focused bullet point with quantifiable results]</li>
+                <li>[Another accomplishment that demonstrates your impact]</li>
+                <li>[Technical skill or project you worked on]</li>
+                <li>[Leadership or collaboration example]</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">[Previous Job Title] | [Previous Company Name]</div>
+                <div class="job-date">[Start Date] - [End Date] | [Location]</div>
+            </div>
+            <ul>
+                <li>[Key responsibility or achievement]</li>
+                <li>[Project or initiative you led]</li>
+                <li>[Skill development or process improvement]</li>
+                <li>[Team collaboration or client interaction]</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">[Degree] in [Field of Study] - [University Name]</div>
+                <div class="job-date">[Graduation Year]</div>
+            </div>
+            <ul>
+                <li>GPA: [X.X/4.0] <em>(if 3.5 or higher)</em></li>
+                <li>Relevant Coursework: [Course 1, Course 2, Course 3]</li>
+                <li>Honors/Awards: [Any academic recognition]</li>
+            </ul>
+        </div>
+
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <strong>Programming Languages:</strong><br>
+                [Language 1, Language 2, Language 3]
+            </div>
+            <div class="skill-category">
+                <strong>Frameworks/Libraries:</strong><br>
+                [Framework 1, Framework 2, Framework 3]
+            </div>
+            <div class="skill-category">
+                <strong>Databases:</strong><br>
+                [Database 1, Database 2]
+            </div>
+            <div class="skill-category">
+                <strong>Tools & Technologies:</strong><br>
+                [Tool 1, Tool 2, Tool 3]
+            </div>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">[Project Name]</div>
+                <div class="job-date">[Technology Stack Used] | [Date]</div>
+            </div>
+            <ul>
+                <li>[Brief description of what the project does]</li>
+                <li>[Key features or functionality you implemented]</li>
+                <li>[Results, metrics, or impact if applicable]</li>
+                <li><strong>GitHub:</strong> [Link to repository]</li>
+            </ul>
+        </div>
+
+        <h2>Additional Information</h2>
+        <p><strong>Languages:</strong> [Language 1 (Proficiency), Language 2 (Proficiency)]</p>
+        <p><strong>Interests:</strong> [Professional interests or hobbies that show relevant skills]</p>
+        <p><strong>Certifications:</strong> [Certification Name] - [Issuing Organization] ([Date])</p>
+    </div>
+</body>
+</html>

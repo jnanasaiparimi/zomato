@@ -1,5 +1,7 @@
 # [Your Full Name]
 
+<img src="profile-photo.jpg" alt="Profile Photo" width="150" style="border-radius: 50%; float: right; margin-left: 20px;">
+
 **[Your Job Title/Professional Summary]**
 
 📧 [your.email@example.com] | 📱 [Your Phone Number] | 🌐 [LinkedIn Profile] | 💻 [GitHub Profile] | 📍 [City, State]

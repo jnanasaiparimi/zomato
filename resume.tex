@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom section formatting
+\titleformat{\section}{\centering\bfseries\large}{}{0em}{}
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Custom commands for consistent formatting
+\newcommand{\resumeheader}[4]{
+    \begin{tabularx}{\textwidth}{X r}
+        \textbf{\Large #1} & Email: #3 \\
+        LinkedIn: \href{#2}{#2} & Mobile: #4 \\
+        GitHub: \href{#2}{github-profile} & \\
+    \end{tabularx}
+    \vspace{0.1in}
+    \hrule
+    \vspace{0.15in}
+}
+
+\newcommand{\education}[4]{
+    \begin{tabularx}{\textwidth}{X r}
+        \textbf{#1} & #3 \\
+        #2 & #4 \\
+    \end{tabularx}
+    \vspace{0.1in}
+}
+
+\newcommand{\experience}[3]{
+    \begin{tabularx}{\textwidth}{X r}
+        \textbf{#1} & #3 \\
+    \end{tabularx}
+    \vspace{0.05in}
+    #2
+    \vspace{0.1in}
+}
+
+\newcommand{\project}[3]{
+    \begin{tabularx}{\textwidth}{X r}
+        \textbf{#1} & #3 \\
+    \end{tabularx}
+    \vspace{0.05in}
+    #2
+    \vspace{0.1in}
+}
+
+\newcommand{\certificate}[3]{
+    \begin{tabularx}{\textwidth}{X r}
+        \textbf{#1} & #3 \\
+    \end{tabularx}
+    \vspace{0.05in}
+    #2
+    \vspace{0.1in}
+}
+
+\begin{document}
+
+% Header
+\resumeheader{YOUR NAME}{your-linkedin-profile}{your.email@example.com}{+1 234-567-8900}
+
+% Education Section
+\section*{EDUCATION}
+
+\education{Your University Name}{Master of Computer Application, GPA: X.XX}{City, Country}{Month Year - Month Year}
+
+\education{Your College Name}{Bachelor of Science (HONORS) - Your Major, GPA: X.XX}{City, Country}{Month Year - Month Year}
+
+% Skills Summary Section
+\section*{SKILLS SUMMARY}
+
+\begin{tabularx}{\textwidth}{l X}
+\textbf{Languages:} & Python, Java, JavaScript, SQL, etc. \\
+\textbf{Frameworks:} & React, Node.js, Django, Flask, etc. \\
+\textbf{Tools:} & Git, Docker, AWS, MongoDB, etc. \\
+\textbf{Platforms:} & Linux, Windows, MacOS, Cloud Platforms \\
+\textbf{Soft Skills:} & Leadership, Communication, Problem Solving, Team Collaboration \\
+\end{tabularx}
+
+% Work Experience Section
+\section*{WORK EXPERIENCE}
+
+\experience{JOB TITLE | COMPANY NAME | LINK}{
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Describe your key achievement or responsibility with quantifiable results
+    \item Another significant contribution you made to the organization
+    \item Third major accomplishment with specific metrics or outcomes
+    \item Additional responsibility that demonstrates your skills and impact
+\end{itemize}
+}{Month Year - Month Year}
+
+% Projects Section
+\section*{PROJECTS}
+
+\project{Project Name | LINK}{
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Describe the project objective and your role in achieving it
+    \item Explain the technologies used and methodologies applied
+    \item Highlight the results, accuracy rates, or performance improvements achieved
+    \item Mention any specific techniques or innovations you implemented
+\end{itemize}
+}{Month Year - Month Year}
+
+\project{Another Project Name | LINK}{
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Brief description of the project and its objectives
+    \item Your specific contributions and technical approach
+    \item Results achieved and impact of the project
+    \item Any challenges overcome or innovations implemented
+\end{itemize}
+}{Month Year - Month Year}
+
+% Certificates Section
+\section*{CERTIFICATES}
+
+\certificate{Certificate Name | CERTIFICATE}{
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Key skill or knowledge area covered in the certification
+    \item Another important aspect learned through this certification
+\end{itemize}
+}{Month Year}
+
+\certificate{Another Certificate | CERTIFICATE}{
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Description of skills gained from this certification
+    \item Practical applications or tools mastered
+\end{itemize}
+}{Month Year}
+
+\end{document}

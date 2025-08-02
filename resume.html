@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .links {
+            color: #0066cc;
+            font-size: 14px;
+        }
+        
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+        }
+        
+        .contact-info div {
+            margin-bottom: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .institution-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+        
+        .institution-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .location-date {
+            text-align: right;
+            font-size: 14px;
+        }
+        
+        .degree {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            font-size: 14px;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+        }
+        
+        .skill-list {
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .project-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .responsibilities {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 5px;
+            list-style-type: disc;
+        }
+        
+        .certificate-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .certificate-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .certificate-details {
+            font-size: 14px;
+            margin-left: 15px;
+        }
+        
+        .certificate-details li {
+            margin-bottom: 3px;
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div>
+                <div class="name">YOUR NAME</div>
+                <div class="links">
+                    LinkedIn: <a href="#">your-linkedin-profile</a><br>
+                    GitHub: <a href="#">your-github-profile</a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div>Email: your.email@example.com</div>
+                <div>Mobile: +1 234-567-8900</div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            
+            <div class="education-item">
+                <div class="institution-header">
+                    <div class="institution-name">Your University Name</div>
+                    <div class="location-date">City, Country<br>Month Year - Month Year</div>
+                </div>
+                <div class="degree">Master of Computer Application, GPA: X.XX</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="institution-header">
+                    <div class="institution-name">Your College Name</div>
+                    <div class="location-date">City, Country<br>Month Year - Month Year</div>
+                </div>
+                <div class="degree">Bachelor of Science (HONORS) - Your Major, GPA: X.XX</div>
+            </div>
+        </div>
+
+        <!-- Skills Summary Section -->
+        <div class="section">
+            <div class="section-title">SKILLS SUMMARY</div>
+            <div class="skills-grid">
+                <div class="skill-category">Languages:</div>
+                <div class="skill-list">Python, Java, JavaScript, SQL, etc.</div>
+                
+                <div class="skill-category">Frameworks:</div>
+                <div class="skill-list">React, Node.js, Django, Flask, etc.</div>
+                
+                <div class="skill-category">Tools:</div>
+                <div class="skill-list">Git, Docker, AWS, MongoDB, etc.</div>
+                
+                <div class="skill-category">Platforms:</div>
+                <div class="skill-list">Linux, Windows, MacOS, Cloud Platforms</div>
+                
+                <div class="skill-category">Soft Skills:</div>
+                <div class="skill-list">Leadership, Communication, Problem Solving, Team Collaboration</div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="section">
+            <div class="section-title">WORK EXPERIENCE</div>
+            
+            <div class="experience-item">
+                <div class="institution-header">
+                    <div class="job-title">JOB TITLE | COMPANY NAME | <a href="#" class="project-link">LINK</a></div>
+                    <div class="location-date">Month Year - Month Year</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Describe your key achievement or responsibility with quantifiable results</li>
+                    <li>Another significant contribution you made to the organization</li>
+                    <li>Third major accomplishment with specific metrics or outcomes</li>
+                    <li>Additional responsibility that demonstrates your skills and impact</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <div class="section-title">PROJECTS</div>
+            
+            <div class="project-item">
+                <div class="institution-header">
+                    <div class="project-title">Project Name | <a href="#" class="project-link">LINK</a></div>
+                    <div class="location-date">Month Year - Month Year</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Describe the project objective and your role in achieving it</li>
+                    <li>Explain the technologies used and methodologies applied</li>
+                    <li>Highlight the results, accuracy rates, or performance improvements achieved</li>
+                    <li>Mention any specific techniques or innovations you implemented</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <div class="institution-header">
+                    <div class="project-title">Another Project Name | <a href="#" class="project-link">LINK</a></div>
+                    <div class="location-date">Month Year - Month Year</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Brief description of the project and its objectives</li>
+                    <li>Your specific contributions and technical approach</li>
+                    <li>Results achieved and impact of the project</li>
+                    <li>Any challenges overcome or innovations implemented</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certificates Section -->
+        <div class="section">
+            <div class="section-title">CERTIFICATES</div>
+            
+            <div class="certificate-item">
+                <div>
+                    <div class="certificate-name">Certificate Name | <a href="#" class="project-link">CERTIFICATE</a></div>
+                    <ul class="certificate-details">
+                        <li>Key skill or knowledge area covered in the certification</li>
+                        <li>Another important aspect learned through this certification</li>
+                    </ul>
+                </div>
+                <div class="location-date">Month Year</div>
+            </div>
+            
+            <div class="certificate-item">
+                <div>
+                    <div class="certificate-name">Another Certificate | <a href="#" class="project-link">CERTIFICATE</a></div>
+                    <ul class="certificate-details">
+                        <li>Description of skills gained from this certification</li>
+                        <li>Practical applications or tools mastered</li>
+                    </ul>
+                </div>
+                <div class="location-date">Month Year</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
